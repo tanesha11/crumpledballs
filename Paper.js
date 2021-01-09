@@ -19,7 +19,7 @@ class Paper {
       translate(pos.x,pos.y);
       fill(255);
       ellipseMode(RADIUS);
-      ellipse(0, 0, this.width, this.height);
+      ellipse(0, 0, this.radius);
       pop();
     }
   };

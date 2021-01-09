@@ -31,7 +31,7 @@ function setup() {
 	ground = new Ground(400,370,800,20);
 	World.add(world,ground);
 
-	paperBall = new Paper(200,150,10);
+	paperBall = new Paper(200,150,20);
 	World.add(world,paperBall);
 
 	Engine.run(engine);
@@ -50,6 +50,6 @@ function draw() {
 
 function keyPressed() {
 	if (keyCode === UP_ARROW) {
-	  Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:3,y:-3});  
+	  Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:12,y:-12});  
 	}
 }
